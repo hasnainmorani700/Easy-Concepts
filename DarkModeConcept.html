@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+    /* =======================Internal CSS========================= */
+   .dark{
+    background: #111;
+    color: white;
+    text-align: center;
+      }
+    /*========================================================*/  
+ </style>
+ </head>
+ <body style="text-align: center;">
+ <!-- ======================Inner Content =========================-->
+  <h1 >Dark mode</h1>
+     <label>Click to on Dark Mode</label>
+        <input type="checkbox" id="Dark" >
+  <!-- ======================End =========================-->
+
+   <!--======================Java script ======================-->     
+   <script>
+  const toggle = document.getElementById('Dark');
+  function click () {
+     document.body.classList.toggle('dark')
+       }
+     toggle.onclick = click
+   </script>
+   <!-- ======================End =========================-->
+</body>
+</html>
